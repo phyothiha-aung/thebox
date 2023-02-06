@@ -1,0 +1,26 @@
+.copyright {
+  display: flex;
+  flex-direction: row;
+  padding: 20px 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright > img {
+  width: 150px;
+  height: 40px;
+}
+
+.copyright > span {
+  font-size: 1.6rem;
+}
+
+@media screen and (max-width: 680px) {
+  .copyright {
+    flex-direction: column;
+  }
+  .copyright > img,
+  .copyright > span {
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,54 @@
+.reputation {
+  width: 100%;
+  margin-top: 40px;
+}
+
+.reputation__header {
+  font-size: 3rem;
+  text-align: center;
+  margin: 25px;
+  margin-bottom: 35px;
+}
+
+.icon {
+  font-size: 3.5rem;
+}
+
+.cards-container {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.card {
+  width: 280px;
+  border: 1px solid rgb(160, 160, 160);
+  padding: 15px 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  transition: all 0.3s;
+}
+
+.card:hover {
+  border-color: rgb(17, 17, 135);
+  transform: scale(110%);
+}
+
+.card__header {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.card__text {
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .cards-container {
+    flex-direction: column;
+  }
+}

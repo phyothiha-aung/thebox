@@ -1,0 +1,72 @@
+.intro {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../assets/images/buildingResize2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-half {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.intro-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro-heading {
+  font-size: 5.5rem;
+  font-weight: 700;
+  padding: 0 80px;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 80px;
+}
+
+@media screen and (min-width: 768px) {
+  .intro {
+    flex-direction: row;
+  }
+  .intro-heading {
+    font-size: 6.5rem;
+    text-align: left;
+    margin: 0;
+  }
+}
+
+.intro-box-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.intro-box {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 300px;
+  background-color: rgb(17, 17, 135);
+  text-align: center;
+}
+
+.intro-box__header {
+  font-size: 1.8rem;
+  color: #fff;
+  font-weight: 400;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.intro-box__text {
+  font-size: 2.5rem;
+  color: #fff;
+  padding: 0 10px;
+}

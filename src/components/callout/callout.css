@@ -1,0 +1,43 @@
+.callout {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  background-color: grey;
+  padding: 30px 50px;
+  align-items: center;
+  justify-items: center;
+}
+
+.callout__title {
+  font-size: 3.5rem;
+  margin: 0;
+  color: #ffff;
+}
+
+.callout__text {
+  font-size: 2rem;
+  color: #ffff;
+  margin-bottom: 0;
+}
+
+.callout__button {
+  font-size: 1.6rem;
+  padding: 10px 15px;
+  border: 1px solid #fff;
+  background-color: #fff0;
+  color: #ffff;
+}
+
+@media screen and (max-width: 768px) {
+  .callout {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .callout__title {
+    text-align: center;
+  }
+
+  .callout__text {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+}
