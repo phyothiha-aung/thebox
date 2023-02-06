@@ -10,7 +10,7 @@ import Navbar from "./components/navbar/Navbar";
 import * as AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-
+import "./App.css";
 const App = () => {
   useEffect(() => {
     AOS.init({
